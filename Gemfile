@@ -22,6 +22,7 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 gem "unicorn"
+gem "rapgenius", "~> 1.0.2"
 
 group :development do
   gem "spring"
