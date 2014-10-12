@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-ruby "2.1.2"
-
 gem "airbrake"
 gem "bourbon", "~> 3.2.1"
 gem "coffee-rails"
@@ -25,6 +23,13 @@ gem "unicorn"
 gem "rapgenius", "~> 1.0.2"
 gem 'slim-rails'
 gem 'draper', '~> 1.3'
+gem 'bower-rails'
+gem 'angular-rails-templates'
+gem 'skim'
+
+group :assets do
+  gem 'angular-rails-templates'
+end
 
 group :development do
   gem "spring"
