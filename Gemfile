@@ -23,6 +23,8 @@ gem "title"
 gem "uglifier"
 gem "unicorn"
 gem "rapgenius", "~> 1.0.2"
+gem 'slim-rails'
+gem 'draper', '~> 1.3'
 
 group :development do
   gem "spring"
@@ -34,7 +36,7 @@ group :development, :test do
   gem "byebug"
   gem "dotenv-rails"
   gem "factory_girl_rails"
-  gem "pry-rails"
+  gem "byebug"
   gem "rspec-rails", "~> 3.0.0"
 end
 
