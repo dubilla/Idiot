@@ -4,7 +4,7 @@ angular.module('degrees')
   # template: JST['degrees/game/game']
   template: """
     <div style="float: left;">
-      <h1>{{game.songs[0].artist.name}}</h1>
+      <h1>{{game.artist.name}}</h1>
       <h4>Songs</h4>
       <ul>
         <li ng-repeat="song in game.songs">

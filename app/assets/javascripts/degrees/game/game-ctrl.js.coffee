@@ -6,7 +6,8 @@ class GameCtrl
 
   getSongs: (artistID) ->
     @$http.get("/songs.json?artist_id=#{artistID}&page=1").then (response) =>
-      @songs = response.data
+      @artist = response.data.artist
+      @songs = response.data.songs
 
   chooseArtist: (song) ->
     @path.push song
