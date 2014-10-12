@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rapgenius.com/artists/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - rapgenius.rb v1.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Oct 2014 21:26:21 GMT
+      Etag:
+      - '"a66026b2f1d181c4861d763f35f56210"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Runtime:
+      - '8'
+      Content-Length:
+      - '2239'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"meta":{"status":200},"response":{"artist":{"user":null,"url":"http://genius.com/artists/Jay-z","image_url":"http://images.rapgenius.com/c7dc8bed82e1b1b9a568d6a46b4a1ed5.480x360x1.jpg","name":"Jay
+        Z","description":{"dom":{"tag":"root","children":[{"tag":"p","children":["Shawn
+        \u201cJAY Z\u201d Carter is one of the most successful rappers ever to pick
+        up a microphone.  He has sold over 50 million records, received ten Grammys,
+        and has more number one albums than any solo artist ever"]},"",{"tag":"p","children":["All
+        of this would be meaningless, though, if it weren\u2019t for his artistry.  \u201cJay-Hova\u201d\u2019s
+        rhymes, flow, trend-setting styles, ear for beats, and ability to craft songs
+        ranging from ",{"data":{"api_path":"/songs/380"},"tag":"a","children":["heartbreakers"],"attributes":{"href":"http://genius.com/lyrics/Jay-z/Song-cry"}},"
+        to ",{"data":{"api_path":"/songs/349"},"tag":"a","children":["party anthems"],"attributes":{"href":"http://genius.com/lyrics/Jay-z-ft-ugk/Big-pimpin"}},"
+        ensures that all of the accolades are not misplaced"]},"",{"tag":"p","children":["For
+        further study, see our ",{"tag":"a","children":["in-depth analysis of Jay\u2019s
+        classic 1996 debut album, ",{"tag":"em","children":["Reasonable Doubt"]}],"attributes":{"href":"http://genius.com/posts/I-got-more-at-stake-than-philly-reasonable-doubt-decoded"}}]},"",{"tag":"p","children":["We\u2019ve
+        also broken down the ",{"tag":"a","children":["\u201cEmpire State of Mind\u201d
+        video"],"attributes":{"href":"http://genius.com/videos/Jay-z/Empire-state-of-mind"}},"
+        in his honor.."]},"",{"tag":"p","children":["Additionally, you can check out
+        his spotlight in the ",{"tag":"a","children":["Verse to Verse"],"attributes":{"href":"http://genius.com/posts/1700-Verse-to-verse-jay-z"}},"
+        series, in which we explain some of the biblical references in his discography."]},"",{"tag":"p","children":["And
+        of course, everybody loves lists: Peep our ranking of the ",{"tag":"a","children":["25
+        greatest Jay-Z verses of all time"],"attributes":{"href":"http://genius.com/posts/919-Bricks-to-billboard-grams-to-grammys-rap-genius-top-25-jay-z-verses"}},"."]}]}},"id":2,"tracking_paths":{"concurrent":"/artists/Jay-z","aggregate":"/artists/Jay-z"}}}}'
+    http_version: 
+  recorded_at: Sun, 12 Oct 2014 21:26:21 GMT
+recorded_with: VCR 2.8.0
