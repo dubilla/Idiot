@@ -1,10 +1,15 @@
 class GameCtrl
   constructor: (@$http) ->
-    @songs = @getSongs()
+    @path = []
+    @songs = @getSongs(2)
 
-  getSongs: () ->
-    @$http.get('/songs.json?artist_id=2&page=1').then (response) =>
+  getSongs: (artistID) ->
+    @$http.get("/songs.json?artist_id=#{artistID}&page=1").then (response) =>
       @songs = response.data
+
+  chooseArtist: (song) ->
+    @path.push song
+    @getSongs(song.artist.id)
 
 angular.module('degrees')
 .controller 'GameCtrl', GameCtrl

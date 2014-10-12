@@ -7,7 +7,7 @@ angular.module('degrees')
     <ul ng-repeat="song in game.songs">
       <li>
         <div>Song: {{song.title}}</div>
-        <a ng-click="chooseArtist(song)">{{song.artist.name}}</a>
+        <a ng-click="game.chooseArtist(song)">{{song.artist.name}}</a>
       </li>
     </ul>
   """
