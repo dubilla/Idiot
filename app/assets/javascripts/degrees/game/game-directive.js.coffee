@@ -22,8 +22,11 @@ angular.module('degrees')
       </div>
       <ul>
         <li ng-repeat="song in game.path">
-          <div>{{song.artist.name}}</div>
-          <div>{{song.title}}</div>
+          <div>{{$index + 1}})</div>
+            <ul>
+              <li>Artist: {{song.artist.name}}</li>
+              <li>Song: {{song.title}}</li>
+            </ul>
         </li>
       </ul>
     </div>
