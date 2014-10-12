@@ -4,10 +4,9 @@ angular.module('degrees')
   # template: JST['degrees/game/game']
   template: """
     <h4>Songs</h4>
-    <ul ng-repeat="song in songs">
-      <li>{{song.name}}</li>
+    <ul ng-repeat="song in game.songs">
+      <li>{{song.title}}</li>
     </ul>
   """
+  controller: 'GameCtrl as game'
   link: (scope, element, attrs) ->
-
-    scope.songs = [{name: 'Woot'}, {name: 'Wooby Woop'}]
