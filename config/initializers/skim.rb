@@ -6,5 +6,5 @@ if defined?(Skim)
 
   # :attr_delims is deprecated in Slim master (unreleased change as of 9/2/14).
   # Change it to :attr_list_delims after we upgrade.
-  Slim::Parser.default_options[:attr_list_delims] = {'(' => ')', '[' => ']'}
+  Slim::Parser.default_options[:attr_delims] = {'(' => ')', '[' => ']'}
 end
