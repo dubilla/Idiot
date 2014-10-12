@@ -2,6 +2,8 @@ require "webmock/rspec"
 
 # http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  require 'capybara/rspec'
+
   config.expect_with :rspec do |expectations|
     expectations.syntax = :expect
   end
@@ -11,6 +13,8 @@ RSpec.configure do |config|
   end
 
   config.order = :random
+
+  config.include Capybara::DSL
 end
 
 WebMock.disable_net_connect!(allow_localhost: true)

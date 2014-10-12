@@ -24,7 +24,6 @@ gem "uglifier"
 gem "unicorn"
 gem "rapgenius", "~> 1.0.2"
 gem 'slim-rails'
-gem 'draper', '~> 1.3'
 gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'skim'
@@ -48,6 +47,7 @@ group :development, :test do
 end
 
 group :test do
+  gem "capybara"
   gem "capybara-webkit", ">= 1.2.0"
   gem "database_cleaner"
   gem "formulaic"
@@ -55,6 +55,7 @@ group :test do
   gem "shoulda-matchers", require: false
   gem "timecop"
   gem "webmock"
+  gem "vcr"
 end
 
 group :staging, :production do
