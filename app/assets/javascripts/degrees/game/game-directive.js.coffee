@@ -4,6 +4,7 @@ angular.module('degrees')
   # template: JST['degrees/game/game']
   template: """
     <div style="float: left;">
+      <h1>{{game.songs[0].artist.name}}</h1>
       <h4>Songs</h4>
       <ul>
         <li ng-repeat="song in game.songs">
@@ -14,7 +15,11 @@ angular.module('degrees')
     </div>
     <div style="float: right;">
       <h4>Path</h4>
-      <h4>{{game.path.length}} Moves</h4>
+      <h4 ng-if="!game.completed">{{game.path.length}} Moves</h4>
+      <div ng-if="game.completed">
+        <h4>Congratulations!</h4>
+        <div>You got to Kendrick Lamar in {{game.path.length}} moves!</div>
+      </div>
       <ul>
         <li ng-repeat="song in game.path">
           <div>{{song.artist.name}}</div>

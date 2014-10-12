@@ -1,6 +1,7 @@
 class GameCtrl
   constructor: (@$http) ->
     @path = []
+    @completed = false
     @songs = @getSongs(2)
 
   getSongs: (artistID) ->
@@ -9,7 +10,11 @@ class GameCtrl
 
   chooseArtist: (song) ->
     @path.push song
-    @getSongs(song.artist.id)
+    # Kendrick Lamar
+    if song.artist.id == 1421
+      @completed = true
+    else
+      @getSongs(song.artist.id)
 
 angular.module('degrees')
 .controller 'GameCtrl', GameCtrl
