@@ -1,11 +1,11 @@
 class GameCtrl
-  constructor: (@$http) ->
+  constructor: (@$http, @GameService) ->
     @path = []
     @completed = false
     @songs = @getSongs(2)
 
   getSongs: (artistID) ->
-    @$http.get("/songs.json?artist_id=#{artistID}&page=1").then (response) =>
+    @GameService.findAll({artistID: artistID}).then (response) =>
       @artist = response.data.artist
       @songs = response.data.songs
 
