@@ -8,6 +8,7 @@ angular.module('degrees')
         <div ng-if="game.completed">
           <h4>Congratulations!</h4>
           <div>You got to Kendrick Lamar in {{game.path.length}} moves!</div>
+          <a href="/">Try Again?</a>
         </div>
       <div ng-if="!game.completed">
         <h1>{{game.artist.name}}</h1>
