@@ -1,8 +1,8 @@
 class GameCtrl
-  constructor: (@$http, @GameService) ->
+  constructor: (@$http, @GameService, $scope) ->
     @path = []
     @completed = false
-    @songs = @getSongs(2)
+    @songs = @getSongs(parseInt($scope.artist, 10))
 
   getSongs: (artistID) ->
     @GameService.findAll({artistID: artistID}).then (response) =>

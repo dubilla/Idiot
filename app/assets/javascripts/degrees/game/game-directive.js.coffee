@@ -1,7 +1,8 @@
 angular.module('degrees')
 .directive 'game', () ->
   restrict: 'A'
-  # template: JST['degrees/game/game']
+  scope:
+    artist: '@'
   template: """
       <div style="float: left;">
         <div ng-if="game.completed">

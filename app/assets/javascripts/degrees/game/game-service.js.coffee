@@ -1,7 +1,7 @@
 angular.module('degrees')
 .factory 'GameService', ($http) ->
 
-  new class Property
+  new class GameService
     constructor: () ->
 
     findAll: (obj) ->
